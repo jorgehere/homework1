@@ -1,6 +1,6 @@
 ---
 
-- hosts: server
+- hosts: localhost
 
   vars: 
    - MyMessage: "homework 1"
