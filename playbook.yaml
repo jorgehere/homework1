@@ -1,9 +1,9 @@
 ---
 
-- hosts: mywebservers
+- hosts: server
 
   vars: 
-   - MyMessage: "Welcome to Ansible world!"
+   - MyMessage: "homework 1"
 
   tasks:
    - name: Nginx setup
