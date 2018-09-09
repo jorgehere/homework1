@@ -9,7 +9,7 @@
    - name: start n
      service: name=nginx state=started
    - name: coppy html
-     copy: src=index.html dest=/usr/share/nginx/html/index.html
+     template: src=index.html dest=/usr/share/nginx/html/index.html
      become: yes
      
  # handlers:
