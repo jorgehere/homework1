@@ -6,4 +6,4 @@
    - name: Nginx setup
      apt: pkg=nginx state=installed update_cache=true
    - name: index.html copy
-     template: src=index.html.j2 dest=/usr/share/nginx/html/index.html
+     template: src=index.html.j2 dest=/usr/share/nginx/html/index.html mode=0644
