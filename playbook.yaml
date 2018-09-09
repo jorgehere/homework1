@@ -7,7 +7,7 @@
 
   tasks:
   - name: Nginx setup
-     yum: pkg=nginx state=installed update_cache=true
+     apt: pkg=nginx state=installed update_cache=true
 
    - name: Start Nginx 
      service: name=nginx state=started
