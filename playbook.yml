@@ -7,7 +7,7 @@
    - name: Nginx setup
      apt: pkg=nginx state=present update_cache=true
    - name: index.html copy
-     copy: src=index.html dest=/usr/share/nginx/html/index.html mode=0644
+     copy: src=index.html dest=/usr/share/nginx/html/ mode=0644
      
  # handlers:
   # - name: start nginx
