@@ -9,7 +9,7 @@
    - name: start n
      service: name=nginx state=started
    - name: coppy html
-     copy: src=/etc/ansible/static-site-src/index.html dest=/Users/jorgemurillocarranza/Desktop/static_site
+     copy: src=/etc/ansible/static-site-src/index.html dest=/usr/share/nginx/html/index.html
      become: yes
      
  # handlers:
