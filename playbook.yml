@@ -7,7 +7,7 @@
    - name: Nginx setup
      apt: pkg=nginx state=present update_cache=true
    - name: coppy html
-     copy:  src=/etc/ansible/index.html dest=/usr/share/nginx/html/ mode=0644
+     template: src=index.html dest=/usr/share/nginx/html/index.html
      
  # handlers:
   # - name: start nginx
