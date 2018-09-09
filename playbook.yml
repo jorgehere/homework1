@@ -9,7 +9,7 @@
    - name: start n
      service: name=nginx state=started
    - name: coppy html
-     template: src=/etc/ansible/index.html dest=/usr/share/nginx/html/index.html
+     copy: src=/etc/ansible/index.html dest=/usr/share/nginx/html/index.html
      become: yes
      
  # handlers:
