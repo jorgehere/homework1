@@ -1,6 +1,6 @@
 ---
 
-- hosts: 18.219.17.70
+- hosts: webserver
 
   tasks:
    - name: Nginx setup
