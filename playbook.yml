@@ -8,6 +8,8 @@
      apt: pkg=nginx state=present update_cache=true
    - name: index.html copy
      copy: src=index.html.j2 dest=/usr/share/nginx/html/index.html mode=0644
+     
+  handlers:
    - name: start nginx
      service: name=nginx state=started
      
