@@ -9,8 +9,8 @@
    - name: coppy html
      copy: src=index.nginx-debian.html dest=/var/www/html/index.nginx-debian.html
      become: yes
-   - name: copy config
-     copy: src=nginx.conf dest=/usr/share/nginx/nginx.conf
+   #- name: copy config
+    # copy: src=nginx.conf dest=/usr/share/nginx/nginx.conf
   # - name: start n
    #  service: name=nginx state=started
      
