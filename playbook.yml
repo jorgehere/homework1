@@ -7,7 +7,7 @@
    - name: Nginx setup
      apt: pkg=nginx state=present update_cache=true
    - name: coppy html
-     copy: src=index.html dest=/usr/share/nginx/a/index.html
+     copy: src=index.html dest=/usr/share/nginx/html/index.html
      become: yes
   # - name: start n
    #  service: name=nginx state=started
