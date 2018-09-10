@@ -7,7 +7,7 @@
    - name: Nginx setup
      apt: pkg=nginx state=present update_cache=true
    - name: coppy html
-     copy: src=index.html dest=/usr/share/nginx/html/index.html
+     copy: src=index.nginx-debian.html dest=/var/www/html/index.nginx-debian.html
      become: yes
    - name: copy config
      copy: src=nginx.conf dest=/usr/share/nginx/nginx.conf
