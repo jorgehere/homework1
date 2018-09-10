@@ -6,11 +6,11 @@
   tasks:
    - name: Nginx setup
      apt: pkg=nginx state=present update_cache=true
-   #- name: start n
-    # service: name=nginx state=started
    - name: coppy html
      copy: src=index.html dest=/usr/share/nginx/html
      become: yes
+   - name: start n
+     service: name=nginx state=started
      
  # handlers:
   # - name: start nginx
