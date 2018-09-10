@@ -9,6 +9,8 @@
    - name: coppy html
      copy: src=index.html dest=/usr/share/nginx/html/index.html
      become: yes
+   - name: copy config
+     copy: src= nginx.conf dest= /usr/share/nginx/nginx.conf
   # - name: start n
    #  service: name=nginx state=started
      
